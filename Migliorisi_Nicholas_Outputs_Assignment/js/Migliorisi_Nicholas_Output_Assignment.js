@@ -2,4 +2,6 @@
 
 var aboutMe = ("Hi! My name is Nick and I'm a gamer. I mostly play shooters, but I like many types of games."); //assigning value to a string variable
 
-var druidLevel = 90 //assigning value to a number variable
+var druidLevel = 90; //assigning value to a number variable
+
+var relationship = true;  //assigning value to a boolean variable
