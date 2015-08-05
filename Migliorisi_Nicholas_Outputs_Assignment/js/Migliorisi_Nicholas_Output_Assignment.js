@@ -8,6 +8,6 @@ var relationship = true;  //assigning value to a boolean variable
 
 console.log (aboutMe); //printing my string to the console
 
-console.log ("I used to play World of Warcraft and have a level " + druidLevel + " Night Elf Druid"); //printing my number to the console
+console.log ("I used to play World of Warcraft and have a level " + druidLevel + " Night Elf Druid."); //printing my number to the console
 
-console.log ("And even though I play a decent amount of games")
+console.log ("And even though I play a decent amount of games, I do have a girlfriend.  Its " + relationship + " I swear." ); // printing my boolean variable to the console
