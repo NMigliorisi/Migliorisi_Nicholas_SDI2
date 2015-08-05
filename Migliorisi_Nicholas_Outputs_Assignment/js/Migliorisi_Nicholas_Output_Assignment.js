@@ -5,3 +5,7 @@ var aboutMe = ("Hi! My name is Nick and I'm a gamer. I mostly play shooters, but
 var druidLevel = 90; //assigning value to a number variable
 
 var relationship = true;  //assigning value to a boolean variable
+
+console.log (aboutMe); //printing my string to the console
+
+console.log ("I used to play World of Warcraft and have a level " + druidLevel + " Night Elf Druid"); //printing my 
