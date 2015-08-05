@@ -1,1 +1,5 @@
-alert("test");
+//Nicholas Migliorisi Output Assignment SDI Section 01 August 2015 WDDBS
+
+var aboutMe = ("Hi! My name is Nick and I'm a gamer. I mostly play shooters, but I like many types of games."); //assigning value to a string variable
+
+var druidLevel = 90 //assigning value to a number variable
