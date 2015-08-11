@@ -3,3 +3,7 @@
 var scoreOne = prompt("We are trying to find the average score of your teams basket ball team.\n Please enter a score:"); //collecting the first score
 var scoreTwo = prompt("Please enter another score:"); //collecting the second score
 var scoreThree = prompt("And another score:"); //collection the third score
+
+var scoreTotal = scoreOne + scoreTwo + scoreThree;  //adding together prompt totals
+
+var scoreAverage = scoreTotal / 3 //finding the average of the scores
