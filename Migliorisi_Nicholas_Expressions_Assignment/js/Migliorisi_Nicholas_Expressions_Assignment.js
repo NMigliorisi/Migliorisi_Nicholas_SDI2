@@ -16,3 +16,8 @@ console.log(scoreThree);//displaying score three in the console
 console.log("These are the scores. Below is the total and the average"); //telling the user what they are seeing in the console
 console.log(scoreTotal);//displaying the total of the scores in the console
 console.log(scoreAverage);//displaying the average score in the console
+
+
+/*
+I tested the calculator by entering the numbers 88, 54, and 26 and got a result of 56 points
+ */
