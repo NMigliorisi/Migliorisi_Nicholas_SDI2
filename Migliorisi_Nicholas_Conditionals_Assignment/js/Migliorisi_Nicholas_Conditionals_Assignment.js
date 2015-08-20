@@ -24,7 +24,18 @@ if(dayThree == ""){
 if(dayFour == ""){
     prompt(forgotDay)
 }else{
-    alert("Thank you!") //If all info is entered the process will continue
+    alert("Thank you! Let's see if you get enough sleep."); //If all info is entered the process will continue
 }
-var nightOne = parseInt(dayOne);
-var
+var nightOne = parseInt(dayOne); //Turning the string data into number data
+var nightTwo = parseInt(dayTwo);
+var nightThree = parseInt(dayThree);
+var nightFour = parseInt(dayFour);
+
+var nightSum =  nightOne + nightTwo + nightThree + nightFour; //Finding the sum of hours over the weekend
+var nightAvg = nightSum / 4; // Finding the average
+
+(nightAvg > 8 || nightAvg == 8) ? alert("You get a healthy amount of sleep with an average of  " + nightAvg + " hours a night") : alert("Get some more sleep, you only have an average of " + " hours a night");
+
+
+console.log(nightSum);
+console.log(nightAvg);
