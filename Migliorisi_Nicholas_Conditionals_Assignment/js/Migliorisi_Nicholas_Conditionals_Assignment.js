@@ -34,8 +34,8 @@ var nightFour = parseInt(dayFour);
 var nightSum =  nightOne + nightTwo + nightThree + nightFour; //Finding the sum of hours over the weekend
 var nightAvg = nightSum / 4; // Finding the average
 
-(nightAvg > 8 || nightAvg == 8) ? alert("You get a healthy amount of sleep with an average of  " + nightAvg + " hours a night") : alert("Get some more sleep, you only have an average of " + " hours a night");
+(nightAvg > 8 || nightAvg == 8) ? alert("You get a healthy amount of sleep with an average of  " + nightAvg + " hours a night on the weekends") : alert("Get some more sleep, you only have an average of " + nightAvg + " hours a night on the weekends"); //deciding if the person is getting enough sleep
 
-
+//printing values to the console
 console.log(nightSum);
 console.log(nightAvg);
