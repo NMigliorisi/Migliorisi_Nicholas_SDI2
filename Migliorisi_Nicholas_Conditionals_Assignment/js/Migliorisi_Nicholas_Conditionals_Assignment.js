@@ -4,4 +4,27 @@ var dayOne = prompt("We are doing to see on average how many hours of sleep peop
 var dayTwo = prompt("How about Saturday night?");//Gathering input for night two
 var dayThree = prompt("And Sunday night?");//Gathering input for night three
 var dayFour = prompt("And finally Monday night?");//Gathering input for night four
-var forgotDay = prompt("Woah there, you forgot one! If you got no sleep one night please type in a zero.");//Gathering any forgotten information
+var forgotDay = ("Woah there, you forgot one! If you got no sleep one night please type in a zero.");//Gathering any forgotten information
+
+if(dayOne == ""){     //This whole block is making sure info is all entered properly
+    prompt(forgotDay)
+}else{
+    dayTwo
+}
+if(dayTwo == ""){
+    prompt(forgotDay)
+}else{
+    dayThree
+}
+if(dayThree == ""){
+    prompt(forgotDay)
+}else{
+    dayFour
+}
+if(dayFour == ""){
+    prompt(forgotDay)
+}else{
+    alert("Thank you!") //If all info is entered the process will continue
+}
+var nightOne = parseInt(dayOne);
+var
