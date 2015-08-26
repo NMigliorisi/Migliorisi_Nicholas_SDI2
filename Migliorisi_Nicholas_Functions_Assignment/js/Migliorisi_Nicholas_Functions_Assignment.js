@@ -16,3 +16,17 @@ while(true){                                           //Beginning a loop to col
         alert("That is not a valid game! Please try again."); //We alert the user of their error and the loop continues
     }
 }
+
+
+
+function numbersGen(min, max, num){   //creating the function
+    var ranNum = [];                  //Using an array to collect numbers
+
+    for(var i = 0; i < num; i++){     //using iteration to collect desired amounts of numbers
+
+        ranNum[i] = Math.random() * (max - min) + min; //randomly selecting numbers in a range TBD
+        ranNum[i] = Math.round(ranNum[i]);             //Rounding those numbers to the nearest integer
+    }
+return ranNum;                        //Retuning the random numbers
+
+}
