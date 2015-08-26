@@ -1,5 +1,10 @@
 //Nicholas Migliorisi  Functions Assignment SDI August 2015  WDDBS
 
+var powerball;
+var pbNum;
+var fsLotto;
+
+
 while(true){                                           //Beginning a loop to collect the game type
     var gameType = prompt("What game do you want to play?\nFlorida State Lottery or Powerball?"); //Asking what game they want to play
     if(gameType == "Powerball"){                       //Starting an if else statement
@@ -30,3 +35,18 @@ function numbersGen(min, max, num){   //creating the function
 return ranNum;                        //Retuning the random numbers
 
 }
+
+if(gameType === "Powerball"){        //Checking the game type
+    powerball = numbersGen(1, 59, 5); //setting the range and amount of numbers needed
+    pbNum = numbersGen(1, 35, 1);    //setting the range for the powerball number
+    alert("Your numbers are " + powerball + " with a Powerball number of " + pbNum); //Alerting the player
+    console.log(powerball);   //printing the powerball numbers to the console
+    console.log(pbNum);       // printing the Powerball to the console
+
+}
+if(gameType === "Florida State Lottery"){ //Checking the game type
+    fsLotto = numbersGen(1, 53, 6);       //Setting the range and amount of numbers needed
+    alert("Your Florida State Lottery numbers are " + fsLotto); //Telling the player their numbers
+    console.log(fsLotto);                 //Printing the numbers to the console
+}
+
