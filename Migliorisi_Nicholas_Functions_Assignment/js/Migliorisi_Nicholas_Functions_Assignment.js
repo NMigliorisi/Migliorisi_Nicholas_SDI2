@@ -15,13 +15,11 @@ while(true){                                           //Beginning a loop to col
             console.log("Florida State Lottery");      //Printing Florida State Lottery to the console if selected game
             break;                                     //Breaking the loop if FS Lotto is selected
         }
-
     }
     if(gameType != "Powerball"||"Florida State Lottery"){ //If neither the Powerball or FS Lotto are chosen
         alert("That is not a valid game! Please try again."); //We alert the user of their error and the loop continues
     }
 }
-
 
 
 function numbersGen(min, max, num){   //creating the function
@@ -31,6 +29,9 @@ function numbersGen(min, max, num){   //creating the function
 
         ranNum[i] = Math.random() * (max - min) + min; //randomly selecting numbers in a range TBD
         ranNum[i] = Math.round(ranNum[i]);             //Rounding those numbers to the nearest integer
+        if(ranNum[i]==ranNum[i]){     //Starting a new if statment
+            ranNum.push(ranNum)       //Keeping numbers from duplicating in the lotto
+        }
     }
 return ranNum;                        //Retuning the random numbers
 
@@ -50,3 +51,6 @@ if(gameType === "Florida State Lottery"){ //Checking the game type
     console.log(fsLotto);                 //Printing the numbers to the console
 }
 
+/* I tested my powerball and got 4,57,46,23,37, with a Powerball number of 23.
+My FS Lotto got me 40,22,21,48,31,8.
+ */
